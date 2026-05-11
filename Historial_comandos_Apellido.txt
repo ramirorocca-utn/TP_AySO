@@ -1,0 +1,54 @@
+ssh-keygen t- ed25519
+ssh-keygen -t ed25519
+cat $HOME/.ss/*.pub
+cat $HOME/.ssh/*pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:ramirorrocca-utn/TP_AySO.git
+ssh -T git@github.com 
+cat $HOME/.ssh/*.pub
+ssh -T git@github.com
+git clone git@github.com:ramirorocca-utn/TP_AySO.git
+cd TP_AySO
+pwd
+ls -1
+cat /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+1s -1
+is -i
+grep -i Home_url /etc/os-release > datos_url.txt
+ls -l
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+git add .
+git config --global user.email "13.ramiro.rocca.02@gmail.com"
+git config --global user.name "Ramiro"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add .
+git commit -m "feat: Aniadiendo informacion de CPU"
+git push 
+cat <<EOF>> README.md Alumno: Ramiro Rocca Division: 113 Turno: Maniana EOF
+Alumno: Ramiro Rocca
+Division: 113
+Turno: Maniana 
+EOF
+
+cat <<EOF>> README.md
+Alumno: Ramiro Rocca
+Division: 113
+Turno: Maniana
+EOF
+
+git add .
+git commit -m "ADD: Anadiendo Readme y datos de usuario"
+git push
+mkdir -p ~/materia1/{un1, uni2, uni3} ~/materia2/{uni1, uni2, uni3} 
+echo 'mkdir -p ~/materia1/{uni1, uni2, uni3} ~/materia2/{uni1, uni2, uni3}' > script_dir.sh
+chmod +x script_dir.sh
+git add .
+git commit -m "ADD: Anadiendo script"
+git push
+history -a
